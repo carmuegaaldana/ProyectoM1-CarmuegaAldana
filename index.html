@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generador de Paletas</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Generador de Paletas</h1>
+      <p>Creá combinaciones de colores aleatorias.</p>
+    </header>
+
+    <main>
+      <section class="controles" aria-labelledby="titulo-controles">
+        <h2 id="titulo-controles">Configurá tu paleta</h2>
+
+        <fieldset>
+          <legend>Opciones de la paleta</legend>
+
+          <label for="cantidad-colores">Cantidad de colores:</label>
+
+          <select id="cantidad-colores">
+            <option value="6">6 colores</option>
+            <option value="8" selected>8 colores</option>
+            <option value="9">9 colores</option>
+          </select>
+
+          <label for="formato-color">Formato del color:</label>
+
+          <select id="formato-color">
+            <option value="hex" selected>HEX</option>
+            <option value="hsl">HSL</option>
+          </select>
+        </fieldset>
+
+        <button id="boton-generar" type="button">Generar paleta</button>
+
+        <p id="mensaje" role="status" aria-live="polite"></p>
+      </section>
+
+      <section aria-labelledby="titulo-paleta">
+        <h2 id="titulo-paleta">Tu paleta</h2>
+
+        <div id="paleta" class="paleta">
+          <!-- JavaScript agrega aquí las tarjetas de colores -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Proyecto Integrador Módulo 1 - 2026</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
