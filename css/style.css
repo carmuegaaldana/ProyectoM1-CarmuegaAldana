@@ -17,9 +17,15 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   background: linear-gradient(135deg, #dbeafe, #e0e7ff);
   color: var(--texto);
+}
+
+h1,
+h2,
+legend {
+  font-family: "Poppins", Arial, sans-serif;
 }
 
 header,
@@ -87,6 +93,7 @@ button {
   border: none;
   background-color: var(--azul-principal);
   color: var(--blanco);
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(37, 99, 235, 0.25);
