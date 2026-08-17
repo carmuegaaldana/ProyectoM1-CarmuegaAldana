@@ -115,11 +115,6 @@ El proyecto no necesita instalación de dependencias.
 4. Abrir `index.html`.
 5. Presionar **Open with Live Server**.
 
-La aplicación se abrirá en una dirección similar a:
-
-```text
-http://127.0.0.1:5500
-```
 
 ## Cómo desplegar con GitHub Pages
 
@@ -131,12 +126,6 @@ http://127.0.0.1:5500
 6. En **Build and deployment**, seleccionar **Deploy from a branch**.
 7. Elegir la rama `main` y la carpeta `/(root)`.
 8. Guardar la configuración y esperar a que finalice el despliegue.
-
-GitHub mostrará una dirección similar a:
-
-```text
-https://usuario.github.io/nombre-del-repositorio/
-```
 
 ## Autoría
 
