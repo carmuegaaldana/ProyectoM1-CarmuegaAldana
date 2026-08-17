@@ -3,6 +3,16 @@ const selectorCantidad = document.getElementById("cantidad-colores");
 const selectorFormato = document.getElementById("formato-color");
 const contenedorPaleta = document.getElementById("paleta");
 const mensaje = document.getElementById("mensaje");
+let temporizadorMensaje;
+
+function mostrarMensajeTemporal(texto) {
+  clearTimeout(temporizadorMensaje);
+  mensaje.textContent = texto;
+
+  temporizadorMensaje = setTimeout(function () {
+    mensaje.textContent = "";
+  }, 3000);
+}
 
 function generarColorHex() {
   const caracteres = "0123456789ABCDEF";
@@ -42,9 +52,9 @@ function obtenerColorTexto(color) {
 async function copiarColor(color) {
   try {
     await navigator.clipboard.writeText(color);
-    mensaje.textContent = `¡Código ${color} copiado al portapapeles!`;
+    mostrarMensajeTemporal(`¡Código ${color} copiado al portapapeles!`);
   } catch {
-    mensaje.textContent = "No se pudo copiar el código.";
+    mostrarMensajeTemporal("No se pudo copiar el código.");
   }
 }
 
@@ -77,6 +87,7 @@ function generarPaleta() {
   const cantidad = Number(selectorCantidad.value);
   const formato = selectorFormato.value;
 
+  clearTimeout(temporizadorMensaje);
   contenedorPaleta.innerHTML = "";
 
   for (let i = 0; i < cantidad; i++) {
