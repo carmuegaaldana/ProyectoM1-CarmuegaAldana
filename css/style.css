@@ -136,7 +136,8 @@ button:active {
 }
 
 button:focus-visible,
-select:focus-visible {
+select:focus-visible,
+.tarjeta-color:focus-visible {
   outline: 3px solid var(--foco);
   outline-offset: 3px;
 }

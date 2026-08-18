@@ -19,8 +19,11 @@ function generarColorHex() {
   let color = "#";
 
   for (let i = 0; i < 6; i++) {
-    const posicionAleatoria = Math.floor(Math.random() * caracteres.length);
-    color += caracteres[Math.floor(Math.random() * caracteres.length)];
+    const posicionAleatoria = Math.floor(
+      Math.random() * caracteres.length
+    );
+
+    color += caracteres[posicionAleatoria];
   }
 
   return color;
@@ -59,25 +62,17 @@ async function copiarColor(color) {
 }
 
 function crearTarjetaColor(color) {
-  const tarjeta = document.createElement("article");
+  const tarjeta = document.createElement("button");
 
+  tarjeta.type = "button";
   tarjeta.classList.add("tarjeta-color");
   tarjeta.style.backgroundColor = color;
   tarjeta.style.color = obtenerColorTexto(color);
   tarjeta.textContent = color.toUpperCase();
-  tarjeta.setAttribute("role", "button");
-  tarjeta.setAttribute("tabindex", "0");
   tarjeta.setAttribute("aria-label", `Copiar el código ${color}`);
 
   tarjeta.addEventListener("click", function () {
     copiarColor(color);
-  });
-
-  tarjeta.addEventListener("keydown", function (evento) {
-    if (evento.key === "Enter" || evento.key === " ") {
-      evento.preventDefault();
-      copiarColor(color);
-    }
   });
 
   return tarjeta;
