@@ -36,6 +36,8 @@ ProyectoM1-AldanaCarmuega/
 ├── docs/
 │   ├── capturas/
 │   │   └── archivos de evidencia .png
+│   ├── flujo-app/
+│   │   └── capturas del funcionamiento .png
 │   └── prompts.md
 ├── source/
 │   └── app.js
@@ -111,8 +113,6 @@ Después de copiar un código, el mensaje desaparece automáticamente a los tres
 
 Los colores principales se almacenan en variables CSS para mantener la consistencia y facilitar futuros cambios. Flexbox organiza la estructura general y CSS Grid distribuye las tarjetas mediante `auto-fit` y `minmax()`, adaptando las columnas al ancho disponible.
 
-Una media query para pantallas de hasta 600 px reorganiza los controles en una sola columna, amplía los selectores y el botón, y muestra las tarjetas en dos columnas. También se utilizaron estados `hover`, `active` y `focus-visible` para comunicar visualmente las interacciones.
-
 ## Cómo ejecutar el proyecto
 
 El proyecto no necesita instalación de dependencias.
@@ -127,39 +127,45 @@ El proyecto no necesita instalación de dependencias.
 
 ## Cómo desplegar el proyecto con GitHub Pages
 
-Como la aplicación utiliza solamente HTML, CSS y JavaScript, puede publicarse directamente con GitHub Pages y no necesita un proceso de compilación.
+Como la aplicación utiliza HTML, CSS y JavaScript sin herramientas de compilación, puede publicarse directamente con GitHub Pages.
 
-1. Subir todos los archivos del proyecto al repositorio de GitHub, conservando la estructura de carpetas.
-2. Comprobar que `index.html` se encuentre en la raíz del repositorio.
-3. Abrir el repositorio en GitHub.
-4. Ingresar en **Settings**.
-5. Seleccionar **Pages** dentro de la sección **Code and automation**.
-6. En **Build and deployment**, elegir **Deploy from a branch**.
-7. Seleccionar la rama `main` y la carpeta `/(root)`.
-8. Presionar **Save**.
-9. Esperar unos minutos hasta que GitHub informe que el sitio fue publicado.
+1. Subir todos los archivos al repositorio de GitHub conservando la estructura de carpetas.
+2. Comprobar que `index.html` esté en la raíz del repositorio.
+3. Abrir **Settings** en el repositorio.
+4. Seleccionar **Pages** dentro de **Code and automation**.
+5. En **Build and deployment**, elegir **Deploy from a branch**.
+6. Seleccionar la rama `main` y la carpeta `/(root)`.
+7. Presionar **Save** y esperar a que GitHub termine la publicación.
 
-La aplicación quedará disponible en una dirección similar a:
+La demo de este proyecto está disponible en:
 
-```text
-https://usuario.github.io/nombre-del-repositorio/
-```
+[https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/](https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/)
 
-Para este proyecto, la dirección esperada es:
+## Capturas del flujo principal
 
-```text
-https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/
-```
+### 1. Configuración de la paleta
 
-Después del primer despliegue, los nuevos cambios se publican con:
+El usuario puede elegir la cantidad de colores y el formato de salida.
 
-```bash
-git add .
-git commit -m "descripción del cambio"
-git push
-```
+![Configuración de Colorfly Studio](./docs/flujo-app/01-configuracion.png)
 
-Luego de cada `push`, GitHub Pages puede tardar algunos minutos en actualizar la versión publicada.
+### 2. Generación de una paleta
+
+La aplicación genera dinámicamente una paleta de nueve colores en formato HSL.
+
+![Paleta HSL generada](./docs/flujo-app/02-paleta-generada.png)
+
+### 3. Copia de un color
+
+Al seleccionar una tarjeta, el código se copia al portapapeles y se muestra un mensaje de confirmación.
+
+![Confirmación de color copiado](./docs/flujo-app/03-color-copiado.png)
+
+### 4. Vista responsive
+
+En pantallas pequeñas, los controles se reorganizan y las tarjetas se muestran en dos columnas.
+
+![Vista responsive de Colorfly Studio](./docs/flujo-app/04-vista-responsive.png)
 
 ## Uso de inteligencia artificial
 

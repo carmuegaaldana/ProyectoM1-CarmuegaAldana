@@ -92,8 +92,9 @@ function generarPaleta() {
     contenedorPaleta.appendChild(crearTarjetaColor(color));
   }
 
-  mensaje.textContent =
-    `¡Paleta de ${cantidad} colores en formato ${formato.toUpperCase()} generada!`;
+  mostrarMensajeTemporal(
+  `¡Paleta de ${cantidad} colores en formato ${formato.toUpperCase()} generada!`
+);
 }
 
 botonGenerar.addEventListener("click", generarPaleta);
