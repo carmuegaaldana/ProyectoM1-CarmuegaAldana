@@ -4,6 +4,8 @@ Colorfly Studio es una aplicación web para generar paletas de colores de manera
 
 El proyecto fue realizado como trabajo integrador del Módulo 1 de Full Stack y está desarrollado con HTML semántico, CSS y JavaScript vanilla.
 
+Enlace a la app: https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/
+
 ## Funcionalidades
 
 - Generación de paletas aleatorias de 6, 8 o 9 colores.
@@ -125,22 +127,6 @@ El proyecto no necesita instalación de dependencias.
 4. Abrir `index.html`.
 5. Presionar **Open with Live Server**.
 
-## Cómo desplegar el proyecto con GitHub Pages
-
-Como la aplicación utiliza HTML, CSS y JavaScript sin herramientas de compilación, puede publicarse directamente con GitHub Pages.
-
-1. Subir todos los archivos al repositorio de GitHub conservando la estructura de carpetas.
-2. Comprobar que `index.html` esté en la raíz del repositorio.
-3. Abrir **Settings** en el repositorio.
-4. Seleccionar **Pages** dentro de **Code and automation**.
-5. En **Build and deployment**, elegir **Deploy from a branch**.
-6. Seleccionar la rama `main` y la carpeta `/(root)`.
-7. Presionar **Save** y esperar a que GitHub termine la publicación.
-
-La demo de este proyecto está disponible en:
-
-[https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/](https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/)
-
 ## Capturas del flujo principal
 
 ### 1. Configuración de la paleta
@@ -151,9 +137,9 @@ El usuario puede elegir la cantidad de colores y el formato de salida.
 
 ### 2. Generación de una paleta
 
-La aplicación genera dinámicamente una paleta de nueve colores en formato HSL.
+La aplicación genera dinámicamente una paleta de nueve colores en formato HEX.
 
-![Paleta HSL generada](./docs/flujo-app/02-paleta-generada.png)
+![Paleta HEX generada](./docs/flujo-app/02-paleta-generada.png)
 
 ### 3. Copia de un color
 

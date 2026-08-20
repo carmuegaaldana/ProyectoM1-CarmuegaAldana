@@ -117,3 +117,7 @@ Dar una respuesta clara después de copiar un código sin dejar un mensaje perma
 
 ![Respuesta sobre copia al portapapeles](./capturas/04b-portapapeles-respuesta.png)
 
+
+---
+
+### [← Volver al README principal](../readme.md)
