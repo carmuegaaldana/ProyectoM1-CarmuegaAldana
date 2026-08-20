@@ -127,6 +127,19 @@ El proyecto no necesita instalación de dependencias.
 4. Abrir `index.html`.
 5. Presionar **Open with Live Server**.
 
+## Cómo desplegar el proyecto con GitHub Pages
+
+Como la aplicación utiliza HTML, CSS y JavaScript sin herramientas de compilación, puede publicarse directamente con GitHub Pages.
+1. Subir todos los archivos al repositorio de GitHub conservando la estructura de carpetas.
+2. Comprobar que index.html esté en la raíz del repositorio.
+3. Abrir Settings en el repositorio.
+4. Seleccionar Pages dentro de Code and automation.
+5. En Build and deployment, elegir Deploy from a branch.
+6. Seleccionar la rama main y la carpeta /(root).
+7. Presionar Save y esperar a que GitHub termine la publicación.
+La demo de este proyecto está disponible en:
+https://carmuegaaldana.github.io/ProyectoM1-CarmuegaAldana/
+
 ## Capturas del flujo principal
 
 ### 1. Configuración de la paleta
